@@ -4,8 +4,7 @@ server.log
 *.bak
 *.backup*
 
-# Legacy local storage, superseded by MongoDB
-data/
+# Uploaded images (empty locally; superseded by MongoDB when MONGODB_URI is set)
 uploads/
 
 # Scratch/debug scripts, not part of the running site

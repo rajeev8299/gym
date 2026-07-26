@@ -1,0 +1,204 @@
+{
+  "categories": [
+    {
+      "id": 1,
+      "name": "Protein (Veg)",
+      "items": [
+        "Paneer",
+        "Tofu",
+        "Dal (Moong/Chana/Arhar)",
+        "Rajma",
+        "Chana",
+        "Soybean",
+        "Sprouts",
+        "Besan",
+        "Dahi",
+        "Milk",
+        "Sattu",
+        "Makhana"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Protein (Non-Veg)",
+      "items": [
+        "Ande (Eggs)",
+        "Chicken Breast",
+        "Murgi",
+        "Machli (Fish)",
+        "Mutton",
+        "Keema",
+        "Egg Whites",
+        "Chicken Soup"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Healthy Carbs",
+      "items": [
+        "Brown Rice",
+        "Chapati",
+        "Oats",
+        "Daliya",
+        "Ragi Roti",
+        "Jowar",
+        "Bajra",
+        "Sweet Potato",
+        "Poha",
+        "Upma",
+        "Idli",
+        "Daliya Khichdi"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Healthy Fats",
+      "items": [
+        "Badam (Almonds)",
+        "Akhrot (Walnuts)",
+        "Kaju",
+        "Peanut Butter",
+        "Desi Ghee (Limited)",
+        "Olive Oil",
+        "Coconut Oil",
+        "Flax Seeds",
+        "Chia Seeds"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Seasonal Vegetables",
+      "items": [
+        "Palak",
+        "Methi",
+        "Lauki",
+        "Tori",
+        "Karela",
+        "Gobhi",
+        "Matar",
+        "Bhindi",
+        "Kaddu",
+        "Baingan",
+        "Tamatar",
+        "Kheera",
+        "Gajar",
+        "Shimla Mirch"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Seasonal Fruits",
+      "items": [
+        "Banana",
+        "Apple",
+        "Santre",
+        "Amla",
+        "Papaya",
+        "Guava",
+        "Watermelon",
+        "Mousambi",
+        "Anar",
+        "Kiwi",
+        "Berries (Premium)",
+        "Ananas"
+      ]
+    }
+  ],
+  "gallery": [
+    {
+      "id": 1784263554110,
+      "title": "Test Gallery",
+      "imageUrl": "http://example.com/image.jpg"
+    }
+  ],
+  "offers": [
+    {
+      "id": 1784263591108,
+      "title": "Summer Sale",
+      "description": "20% off",
+      "imageUrl": "http://example.com/offer.jpg"
+    }
+  ],
+  "settings": {
+    "heroSlides": [
+      "https://via.placeholder.com/1200x400?text=Hero+Slide+1",
+      "https://via.placeholder.com/1200x400?text=Hero+Slide+2",
+      "https://via.placeholder.com/1200x400?text=Hero+Slide+3"
+    ],
+    "promoBanner": "https://example.com/newpromo.jpg",
+    "galleryPlaceholder": "https://via.placeholder.com/400x300?text=Gallery+Image"
+  },
+  "bookings": [],
+  "pricingPlans": [
+    {
+      "id": 1,
+      "category": "Individual",
+      "image": "https://images.unsplash.com/photo-1571731956672-f2b94d7dd0cb?auto=format&fit=crop&w=800&q=80",
+      "rows": [
+        {
+          "label": "1 day",
+          "price": "₹500"
+        },
+        {
+          "label": "1 week",
+          "price": "₹1,500"
+        },
+        {
+          "label": "1 month",
+          "price": "₹5,000"
+        },
+        {
+          "label": "3 months",
+          "price": "₹9,000"
+        },
+        {
+          "label": "6 months",
+          "price": "₹12,000"
+        },
+        {
+          "label": "12 months",
+          "price": "₹15,000"
+        },
+        {
+          "label": "Renewal",
+          "price": "₹10,000"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "category": "Couple / Partner",
+      "image": "https://images.unsplash.com/photo-1518310383802-640c2de311b2?auto=format&fit=crop&w=800&q=80",
+      "rows": [
+        {
+          "label": "1 day",
+          "price": "₹800"
+        },
+        {
+          "label": "1 week",
+          "price": "₹2,500"
+        },
+        {
+          "label": "1 month",
+          "price": "₹8,000"
+        },
+        {
+          "label": "3 months",
+          "price": "₹14,000"
+        },
+        {
+          "label": "6 months",
+          "price": "₹19,000"
+        },
+        {
+          "label": "12 months",
+          "price": "₹24,000"
+        },
+        {
+          "label": "Renewal",
+          "price": "₹16,000"
+        }
+      ]
+    }
+  ]
+}
