@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pricing | Bob's Gym</title>
+    <title>Pricing | Rajeev fitness</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -11,8 +11,9 @@
       <div class="container nav-bar">
         <a class="brand" href="index.html">
           <span class="brand-mark">B</span>
-          <span>Bob's Gym</span>
+          <span>Rajeev fitness</span>
         </a>
+        <button class="theme-toggle" type="button" aria-label="Toggle color mode" aria-pressed="false">🌙 Dark</button>
         <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
           <span></span><span></span><span></span>
         </button>
@@ -23,6 +24,8 @@
           <a href="timetable.html">Timetable</a>
           <a href="gallery.html">Gallery</a>
           <a href="pricing.html" class="active">Pricing</a>
+          <a href="diet-plan.html">Diet Plan</a>
+          <a href="bmi-calculator.html">BMI Calculator</a>
           <a href="contact.html">Contact</a>
         </nav>
       </div>
@@ -34,55 +37,82 @@
           <p class="eyebrow">Membership pricing</p>
           <h1>Choose a plan that fits your routine and budget.</h1>
           <p>Transparent pricing with flexible options for individuals and couples.</p>
+          <div class="hero-steps">
+            <div class="hero-step">
+              <span class="step-no">1</span>
+              <strong>Clear pricing</strong>
+              <span>Simple membership options with no confusion.</span>
+            </div>
+            <div class="hero-step">
+              <span class="step-no">2</span>
+              <strong>Flexible plans</strong>
+              <span>Choose the best fit for your budget and time.</span>
+            </div>
+            <div class="hero-step">
+              <span class="step-no">3</span>
+              <strong>Easy membership</strong>
+              <span>Start quickly and enjoy premium gym access.</span>
+            </div>
+          </div>
+          <div class="hero-badges">
+            <span>💸 Clear pricing</span>
+            <span>🏅 Flexible plans</span>
+            <span>📆 Easy membership</span>
+          </div>
         </div>
       </section>
 
       <section class="section">
-        <div class="container price-grid">
-          <article class="price-card">
-            <h3>Day Pass</h3>
-            <p class="price">₹500</p>
-            <ul>
-              <li>Single day access</li>
-              <li>Gym floor access</li>
-              <li>Fitness guidance</li>
-            </ul>
-          </article>
-          <article class="price-card featured">
-            <h3>1 Month</h3>
-            <p class="price">₹5,000</p>
-            <ul>
-              <li>Unlimited access</li>
-              <li>Group class entry</li>
-              <li>Trainer support</li>
-            </ul>
-          </article>
-          <article class="price-card">
-            <h3>6 Months</h3>
-            <p class="price">₹12,000</p>
-            <ul>
-              <li>Best long-term value</li>
-              <li>Priority class bookings</li>
-              <li>Diet consultation</li>
-            </ul>
-          </article>
-          <article class="price-card">
-            <h3>12 Months</h3>
-            <p class="price">₹15,000</p>
-            <ul>
-              <li>Premium membership</li>
-              <li>Extended wellness support</li>
-              <li>Exclusive offers</li>
-            </ul>
-          </article>
+        <div class="container">
+          <div class="section-heading centered">
+            <p class="eyebrow">Our packages</p>
+            <h2>Detailed membership pricing.</h2>
+            <p>Pick the plan that matches how you train — solo or with a partner.</p>
+          </div>
+          <div class="price-table-grid" id="pricing-plans-container">
+            <p>Loading pricing…</p>
+          </div>
         </div>
       </section>
     </main>
 
+    <div class="booking-modal" id="booking-modal">
+      <div class="booking-modal-content">
+        <button type="button" class="close-btn" id="booking-modal-close" aria-label="Close">&times;</button>
+        <h3>Book a Visit</h3>
+        <p class="booking-plan-label" id="booking-plan-label">Individual plan</p>
+        <form class="booking-form" id="booking-form">
+          <input type="hidden" id="booking-plan" name="plan" value="">
+          <label>
+            Name
+            <input type="text" id="booking-name" name="name" placeholder="Your full name" required>
+          </label>
+          <label>
+            Phone
+            <input type="tel" id="booking-phone" name="phone" placeholder="10-digit mobile number" required>
+          </label>
+          <label>
+            Email (optional)
+            <input type="email" id="booking-email" name="email" placeholder="you@example.com">
+          </label>
+          <label>
+            Preferred date (optional)
+            <input type="date" id="booking-date" name="preferredDate">
+          </label>
+          <label>
+            Message (optional)
+            <textarea id="booking-message" name="message" placeholder="Anything you'd like us to know"></textarea>
+          </label>
+          <div class="booking-form-msg" id="booking-form-msg"></div>
+          <button type="submit" class="btn btn-primary">Submit Request</button>
+        </form>
+      </div>
+    </div>
+
     <footer class="site-footer">
       <div class="container footer-grid">
         <div>
-          <h3>Bob's Gym</h3>
+          <h3>Rajeev fitness</h3>
           <p>Premium wellness and fitness for every stage of your journey.</p>
         </div>
         <div>
@@ -96,7 +126,7 @@
         </div>
       </div>
       <div class="container footer-bottom">
-        <p>© <span id="year"></span> Bob's Gym. All rights reserved.</p>
+        <p>© <span id="year"></span> Rajeev fitness. All rights reserved.</p>
       </div>
     </footer>
 

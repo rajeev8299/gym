@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Classes | Bob's Gym</title>
+    <title>Classes | Rajeev fitness</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -11,8 +11,9 @@
       <div class="container nav-bar">
         <a class="brand" href="index.html">
           <span class="brand-mark">B</span>
-          <span>Bob's Gym</span>
+          <span>Rajeev fitness</span>
         </a>
+        <button class="theme-toggle" type="button" aria-label="Toggle color mode" aria-pressed="false">🌙 Dark</button>
         <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
           <span></span><span></span><span></span>
         </button>
@@ -23,6 +24,8 @@
           <a href="timetable.html">Timetable</a>
           <a href="gallery.html">Gallery</a>
           <a href="pricing.html">Pricing</a>
+          <a href="diet-plan.html">Diet Plan</a>
+          <a href="bmi-calculator.html">BMI Calculator</a>
           <a href="contact.html">Contact</a>
         </nav>
       </div>
@@ -34,6 +37,28 @@
           <p class="eyebrow">Our classes</p>
           <h1>Choose the session that fits your pace and goals.</h1>
           <p>From strength and cardio to yoga and martial arts, our classes are designed to energize, challenge, and support your routines.</p>
+          <div class="hero-steps">
+            <div class="hero-step">
+              <span class="step-no">1</span>
+              <strong>Energy-packed</strong>
+              <span>Vibrant classes that keep motivation high.</span>
+            </div>
+            <div class="hero-step">
+              <span class="step-no">2</span>
+              <strong>Guided coaching</strong>
+              <span>Structured sessions by experienced trainers.</span>
+            </div>
+            <div class="hero-step">
+              <span class="step-no">3</span>
+              <strong>Goal based</strong>
+              <span>Choose classes that fit strength, cardio, or mobility goals.</span>
+            </div>
+          </div>
+          <div class="hero-badges">
+            <span>⚡ Energy-packed</span>
+            <span>🧠 Guided coaching</span>
+            <span>🎯 Goal based</span>
+          </div>
         </div>
       </section>
 
@@ -65,12 +90,301 @@
           </article>
         </div>
       </section>
+
+      <section class="section section-alt">
+        <div class="container-wide">
+          <div class="section-heading centered">
+            <p class="eyebrow">Weekly schedule</p>
+            <h2>Class timetable with timings.</h2>
+            <p>Four sessions a day, six days a week — pick a class, note the trainer and level, and show up.</p>
+          </div>
+          <div class="schedule-grid">
+            <div class="schedule-day">
+              <div class="schedule-day-header">Monday</div>
+              <div class="schedule-slot">
+                <span class="schedule-time">6:00 AM</span>
+                <span class="schedule-icon">💃</span>
+                <span class="schedule-class">Dance Aerobics</span>
+                <div class="schedule-meta">
+                  <span class="schedule-level all-levels">All Levels</span>
+                  <span class="schedule-duration">45 min</span>
+                  <span class="schedule-trainer">with <strong>Coach Priya</strong></span>
+                </div>
+              </div>
+              <div class="schedule-slot">
+                <span class="schedule-time">8:00 AM</span>
+                <span class="schedule-icon">🥊</span>
+                <span class="schedule-class">Kick Boxing / Martial Arts</span>
+                <div class="schedule-meta">
+                  <span class="schedule-level advanced">Advanced</span>
+                  <span class="schedule-duration">60 min</span>
+                  <span class="schedule-trainer">with <strong>Coach Vikram</strong></span>
+                </div>
+              </div>
+              <div class="schedule-slot">
+                <span class="schedule-time">5:30 PM</span>
+                <span class="schedule-icon">💃</span>
+                <span class="schedule-class">Dance Aerobics</span>
+                <div class="schedule-meta">
+                  <span class="schedule-level all-levels">All Levels</span>
+                  <span class="schedule-duration">45 min</span>
+                  <span class="schedule-trainer">with <strong>Coach Priya</strong></span>
+                </div>
+              </div>
+              <div class="schedule-slot">
+                <span class="schedule-time">7:00 PM</span>
+                <span class="schedule-icon">🥊</span>
+                <span class="schedule-class">Kick Boxing / Martial Arts</span>
+                <div class="schedule-meta">
+                  <span class="schedule-level advanced">Advanced</span>
+                  <span class="schedule-duration">60 min</span>
+                  <span class="schedule-trainer">with <strong>Coach Vikram</strong></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="schedule-day">
+              <div class="schedule-day-header">Tuesday</div>
+              <div class="schedule-slot">
+                <span class="schedule-time">6:00 AM</span>
+                <span class="schedule-icon">🧘</span>
+                <span class="schedule-class">Yoga Classes</span>
+                <div class="schedule-meta">
+                  <span class="schedule-level all-levels">All Levels</span>
+                  <span class="schedule-duration">45 min</span>
+                  <span class="schedule-trainer">with <strong>Coach Neha</strong></span>
+                </div>
+              </div>
+              <div class="schedule-slot">
+                <span class="schedule-time">8:00 AM</span>
+                <span class="schedule-icon">🏋️</span>
+                <span class="schedule-class">Weight Aerobics</span>
+                <div class="schedule-meta">
+                  <span class="schedule-level intermediate">Intermediate</span>
+                  <span class="schedule-duration">50 min</span>
+                  <span class="schedule-trainer">with <strong>Coach Rohan</strong></span>
+                </div>
+              </div>
+              <div class="schedule-slot">
+                <span class="schedule-time">5:30 PM</span>
+                <span class="schedule-icon">🧘</span>
+                <span class="schedule-class">Yoga Classes</span>
+                <div class="schedule-meta">
+                  <span class="schedule-level all-levels">All Levels</span>
+                  <span class="schedule-duration">45 min</span>
+                  <span class="schedule-trainer">with <strong>Coach Neha</strong></span>
+                </div>
+              </div>
+              <div class="schedule-slot">
+                <span class="schedule-time">7:00 PM</span>
+                <span class="schedule-icon">🏋️</span>
+                <span class="schedule-class">Weight Aerobics</span>
+                <div class="schedule-meta">
+                  <span class="schedule-level intermediate">Intermediate</span>
+                  <span class="schedule-duration">50 min</span>
+                  <span class="schedule-trainer">with <strong>Coach Rohan</strong></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="schedule-day">
+              <div class="schedule-day-header">Wednesday</div>
+              <div class="schedule-slot">
+                <span class="schedule-time">6:00 AM</span>
+                <span class="schedule-icon">🕺</span>
+                <span class="schedule-class">Zumba / Bhangra Aerobics</span>
+                <div class="schedule-meta">
+                  <span class="schedule-level all-levels">All Levels</span>
+                  <span class="schedule-duration">45 min</span>
+                  <span class="schedule-trainer">with <strong>Coach Priya</strong></span>
+                </div>
+              </div>
+              <div class="schedule-slot">
+                <span class="schedule-time">8:00 AM</span>
+                <span class="schedule-icon">🥊</span>
+                <span class="schedule-class">Kick Boxing / Martial Arts</span>
+                <div class="schedule-meta">
+                  <span class="schedule-level advanced">Advanced</span>
+                  <span class="schedule-duration">60 min</span>
+                  <span class="schedule-trainer">with <strong>Coach Vikram</strong></span>
+                </div>
+              </div>
+              <div class="schedule-slot">
+                <span class="schedule-time">5:30 PM</span>
+                <span class="schedule-icon">🕺</span>
+                <span class="schedule-class">Zumba / Bhangra Aerobics</span>
+                <div class="schedule-meta">
+                  <span class="schedule-level all-levels">All Levels</span>
+                  <span class="schedule-duration">45 min</span>
+                  <span class="schedule-trainer">with <strong>Coach Priya</strong></span>
+                </div>
+              </div>
+              <div class="schedule-slot">
+                <span class="schedule-time">7:00 PM</span>
+                <span class="schedule-icon">🥊</span>
+                <span class="schedule-class">Kick Boxing / Martial Arts</span>
+                <div class="schedule-meta">
+                  <span class="schedule-level advanced">Advanced</span>
+                  <span class="schedule-duration">60 min</span>
+                  <span class="schedule-trainer">with <strong>Coach Vikram</strong></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="schedule-day">
+              <div class="schedule-day-header">Thursday</div>
+              <div class="schedule-slot">
+                <span class="schedule-time">6:00 AM</span>
+                <span class="schedule-icon">🪜</span>
+                <span class="schedule-class">Step Aerobics</span>
+                <div class="schedule-meta">
+                  <span class="schedule-level intermediate">Intermediate</span>
+                  <span class="schedule-duration">50 min</span>
+                  <span class="schedule-trainer">with <strong>Coach Neha</strong></span>
+                </div>
+              </div>
+              <div class="schedule-slot">
+                <span class="schedule-time">8:00 AM</span>
+                <span class="schedule-icon">🧘</span>
+                <span class="schedule-class">Yoga Classes</span>
+                <div class="schedule-meta">
+                  <span class="schedule-level all-levels">All Levels</span>
+                  <span class="schedule-duration">45 min</span>
+                  <span class="schedule-trainer">with <strong>Coach Neha</strong></span>
+                </div>
+              </div>
+              <div class="schedule-slot">
+                <span class="schedule-time">5:30 PM</span>
+                <span class="schedule-icon">🪜</span>
+                <span class="schedule-class">Step Aerobics</span>
+                <div class="schedule-meta">
+                  <span class="schedule-level intermediate">Intermediate</span>
+                  <span class="schedule-duration">50 min</span>
+                  <span class="schedule-trainer">with <strong>Coach Neha</strong></span>
+                </div>
+              </div>
+              <div class="schedule-slot">
+                <span class="schedule-time">7:00 PM</span>
+                <span class="schedule-icon">🧘</span>
+                <span class="schedule-class">Yoga Classes</span>
+                <div class="schedule-meta">
+                  <span class="schedule-level all-levels">All Levels</span>
+                  <span class="schedule-duration">45 min</span>
+                  <span class="schedule-trainer">with <strong>Coach Neha</strong></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="schedule-day">
+              <div class="schedule-day-header">Friday</div>
+              <div class="schedule-slot">
+                <span class="schedule-time">6:00 AM</span>
+                <span class="schedule-icon">🧘‍♂️</span>
+                <span class="schedule-class">Power Yoga / Ball Aerobics / Tai Chi</span>
+                <div class="schedule-meta">
+                  <span class="schedule-level all-levels">All Levels</span>
+                  <span class="schedule-duration">45 min</span>
+                  <span class="schedule-trainer">with <strong>Coach Neha</strong></span>
+                </div>
+              </div>
+              <div class="schedule-slot">
+                <span class="schedule-time">8:00 AM</span>
+                <span class="schedule-icon">🥊</span>
+                <span class="schedule-class">Kick Boxing / Martial Arts</span>
+                <div class="schedule-meta">
+                  <span class="schedule-level advanced">Advanced</span>
+                  <span class="schedule-duration">60 min</span>
+                  <span class="schedule-trainer">with <strong>Coach Vikram</strong></span>
+                </div>
+              </div>
+              <div class="schedule-slot">
+                <span class="schedule-time">5:30 PM</span>
+                <span class="schedule-icon">🧘‍♂️</span>
+                <span class="schedule-class">Power Yoga / Ball Aerobics / Tai Chi</span>
+                <div class="schedule-meta">
+                  <span class="schedule-level all-levels">All Levels</span>
+                  <span class="schedule-duration">45 min</span>
+                  <span class="schedule-trainer">with <strong>Coach Neha</strong></span>
+                </div>
+              </div>
+              <div class="schedule-slot">
+                <span class="schedule-time">7:00 PM</span>
+                <span class="schedule-icon">🥊</span>
+                <span class="schedule-class">Kick Boxing / Martial Arts</span>
+                <div class="schedule-meta">
+                  <span class="schedule-level advanced">Advanced</span>
+                  <span class="schedule-duration">60 min</span>
+                  <span class="schedule-trainer">with <strong>Coach Vikram</strong></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="schedule-day">
+              <div class="schedule-day-header">Saturday</div>
+              <div class="schedule-slot">
+                <span class="schedule-time">6:00 AM</span>
+                <span class="schedule-icon">🏋️‍♀️</span>
+                <span class="schedule-class">Kettle Bell</span>
+                <div class="schedule-meta">
+                  <span class="schedule-level advanced">Advanced</span>
+                  <span class="schedule-duration">45 min</span>
+                  <span class="schedule-trainer">with <strong>Coach Vikram</strong></span>
+                </div>
+              </div>
+              <div class="schedule-slot">
+                <span class="schedule-time">8:00 AM</span>
+                <span class="schedule-icon">🥊</span>
+                <span class="schedule-class">Kick Boxing / Martial Arts</span>
+                <div class="schedule-meta">
+                  <span class="schedule-level advanced">Advanced</span>
+                  <span class="schedule-duration">60 min</span>
+                  <span class="schedule-trainer">with <strong>Coach Vikram</strong></span>
+                </div>
+              </div>
+              <div class="schedule-slot">
+                <span class="schedule-time">5:30 PM</span>
+                <span class="schedule-icon">🏋️‍♀️</span>
+                <span class="schedule-class">Kettle Bell</span>
+                <div class="schedule-meta">
+                  <span class="schedule-level advanced">Advanced</span>
+                  <span class="schedule-duration">45 min</span>
+                  <span class="schedule-trainer">with <strong>Coach Vikram</strong></span>
+                </div>
+              </div>
+              <div class="schedule-slot">
+                <span class="schedule-time">7:00 PM</span>
+                <span class="schedule-icon">🥊</span>
+                <span class="schedule-class">Kick Boxing / Martial Arts</span>
+                <div class="schedule-meta">
+                  <span class="schedule-level advanced">Advanced</span>
+                  <span class="schedule-duration">60 min</span>
+                  <span class="schedule-trainer">with <strong>Coach Vikram</strong></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="schedule-day">
+              <div class="schedule-day-header">Sunday</div>
+              <div class="schedule-slot schedule-closed">
+                <span class="schedule-icon">🌤️</span>
+                <strong>Closed for classes</strong>
+                <span>Gym floor open 8 AM – 12 PM for self-training and recovery.</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="section-heading centered schedule-category-summary">
+            <p class="eyebrow">All class categories</p>
+            <p>Dance Aerobics • Kick Boxing / Martial Arts • Yoga Classes • Weight Aerobics • Zumba / Bhangra Aerobics • Step Aerobics • Power Yoga / Ball Aerobics / Tai Chi • Kettle Bell</p>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer class="site-footer">
       <div class="container footer-grid">
         <div>
-          <h3>Bob's Gym</h3>
+          <h3>Rajeev fitness</h3>
           <p>Premium wellness and fitness for every stage of your journey.</p>
         </div>
         <div>
@@ -84,7 +398,7 @@
         </div>
       </div>
       <div class="container footer-bottom">
-        <p>© <span id="year"></span> Bob's Gym. All rights reserved.</p>
+        <p>© <span id="year"></span> Rajeev fitness. All rights reserved.</p>
       </div>
     </footer>
 

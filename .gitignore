@@ -1,0 +1,33 @@
+node_modules/
+.env
+server.log
+*.bak
+*.backup*
+
+# Legacy local storage, superseded by MongoDB
+data/
+uploads/
+
+# Scratch/debug scripts, not part of the running site
+check.js
+check2.js
+check_diet.js
+check_diet2.js
+check_diet3.js
+check_diet4.js
+check_syntax.js
+check.ps1
+run.js
+test_a.js
+test_b.js
+test_browser.html
+test_chunks.js
+test_diet_dark.js
+test_em.js
+test_err.js
+test_first10.js
+test_full.html
+test_mini.js
+test_modal.js
+test_nest.js
+scratch_breakfast_names.json

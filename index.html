@@ -16,13 +16,14 @@
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body>
+  <body class="page-home">
     <header class="site-header">
       <div class="container nav-bar">
         <a class="brand" href="index.html">
           <span class="brand-mark">R</span>
           <span>Rajeev Fitness</span>
         </a>
+        <button class="theme-toggle" type="button" aria-label="Toggle color mode" aria-pressed="false">🌙 Dark</button>
         <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
           <span></span><span></span><span></span>
         </button>
@@ -33,6 +34,8 @@
           <a href="timetable.html">Timetable</a>
           <a href="gallery.html">Gallery</a>
           <a href="pricing.html">Pricing</a>
+          <a href="diet-plan.html">Diet Plan</a>
+          <a href="bmi-calculator.html">BMI Calculator</a>
           <a href="contact.html">Contact</a>
         </nav>
       </div>
@@ -66,29 +69,60 @@
                 <span>Locations across city</span>
               </div>
             </div>
+            <div class="hero-steps">
+              <div class="hero-step">
+                <span class="step-no">1</span>
+                <strong>Premium setup</strong>
+                <span>Modern machines and clean training zones.</span>
+              </div>
+              <div class="hero-step">
+                <span class="step-no">2</span>
+                <strong>Expert coaching</strong>
+                <span>Guidance for strength, recovery, and nutrition.</span>
+              </div>
+              <div class="hero-step">
+                <span class="step-no">3</span>
+                <strong>Real results</strong>
+                <span>Structured plans that keep you consistent.</span>
+              </div>
+            </div>
+            <div class="hero-badges">
+              <span>💪 Strength</span>
+              <span>🧘 Wellness</span>
+              <span>🔥 Results-focused</span>
+            </div>
           </div>
           <div class="hero-card">
             <div class="slider">
               <div class="slide active">
-                <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1200&q=80" alt="Indian gym training area" />
+                <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1200&q=80" alt="Woman standing surrounded by exercise equipment" />
               </div>
               <div class="slide">
-                <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=1200&q=80" alt="Strength training workout" />
+                <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=1200&q=80" alt="Person about to lift the barbell" />
               </div>
               <div class="slide">
-                <img src="https://images.unsplash.com/photo-1571902943202-507ec2618e8f?auto=format&fit=crop&w=1200&q=80" alt="Workout equipment" />
+                <img src="https://images.unsplash.com/photo-1593079831268-3381b0db4a77?auto=format&fit=crop&w=1200&q=80" alt="Black and gray escalator inside building" />
               </div>
               <div class="slide">
-                <img src="https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?auto=format&fit=crop&w=1200&q=80" alt="Yoga and wellness session" />
+                <img src="https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?auto=format&fit=crop&w=1200&q=80" alt="Woman doing weight lifting" />
               </div>
               <div class="slide">
-                <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=1200&q=80" alt="Cardio training session" />
+                <img src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?auto=format&fit=crop&w=1200&q=80" alt="Person in gray shirt holding black dumbbell" />
               </div>
               <div class="slide">
-                <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=1200&q=80" alt="Modern fitness studio" />
+                <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=1200&q=80" alt="Woman exercising indoors" />
               </div>
               <div class="slide">
-                <img src="https://images.unsplash.com/photo-1599058917212-d750089bc07e?auto=format&fit=crop&w=1200&q=80" alt="Functional training space" />
+                <img src="https://images.unsplash.com/photo-1542766788-a2f588f447ee?auto=format&fit=crop&w=1200&q=80" alt="Black and gray treadmill" />
+              </div>
+              <div class="slide">
+                <img src="https://images.unsplash.com/photo-1599447421416-3414500d18a5?auto=format&fit=crop&w=1200&q=80" alt="Girl doing yoga on pink yoga mat" />
+              </div>
+              <div class="slide">
+                <img src="https://images.unsplash.com/photo-1571388208497-71bedc66e932?auto=format&fit=crop&w=1200&q=80" alt="Woman sitting on exercise bench" />
+              </div>
+              <div class="slide">
+                <img src="https://images.unsplash.com/photo-1554344728-77cf90d9ed26?auto=format&fit=crop&w=1200&q=80" alt="Man exercising inside dim room" />
               </div>
             </div>
           </div>
@@ -115,6 +149,7 @@
               <h3>Flexible Memberships</h3>
               <p>Plans from day passes to annual memberships with premium value.</p>
             </div>
+            
             <div class="feature-item">
               <h3>Wellness Facilities</h3>
               <p>Massage, recovery support, and a health-focused environment.</p>
@@ -165,6 +200,28 @@
       <section class="section section-alt">
         <div class="container">
           <div class="section-heading">
+            <p class="eyebrow">Gallery highlights</p>
+            <h2>More photos from the gym floor, classes, and wellness space.</h2>
+            <p>See the energy, equipment, and atmosphere that make Rajeev Fitness feel premium and motivating.</p>
+          </div>
+          <div class="photo-showcase-grid">
+            <article class="photo-card large"><img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1200&q=80" alt="Modern gym interior" /></article>
+            <article class="photo-card"><img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=900&q=80" alt="Strength training" /></article>
+            <article class="photo-card"><img src="https://images.unsplash.com/photo-1571902943202-507ec2618e8f?auto=format&fit=crop&w=900&q=80" alt="Workout equipment" /></article>
+            <article class="photo-card"><img src="https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?auto=format&fit=crop&w=900&q=80" alt="Wellness training" /></article>
+            <article class="photo-card"><img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=900&q=80" alt="Cardio workout" /></article>
+            <article class="photo-card"><img src="https://images.unsplash.com/photo-1599058917212-d750089bc07e?auto=format&fit=crop&w=900&q=80" alt="Functional training" /></article>
+            <article class="photo-card"><img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=900&q=80" alt="Fitness coaching" /></article>
+            <article class="photo-card"><img src="https://images.unsplash.com/photo-1517343985841-f8b2d66d7c6d?auto=format&fit=crop&w=900&q=80" alt="Athlete training" /></article>
+            <article class="photo-card"><img src="https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?auto=format&fit=crop&w=900&q=80" alt="Workout posture" /></article>
+            <article class="photo-card"><img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?auto=format&fit=crop&w=900&q=80" alt="Healthy lifestyle" /></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-alt">
+        <div class="container">
+          <div class="section-heading">
             <p class="eyebrow">Popular classes</p>
             <h2>Train with purpose through our signature programs.</h2>
           </div>
@@ -188,7 +245,25 @@
         </div>
       </section>
 
-      <section class="section">
+      <section class="section section-alt">
+        <div class="container split-section">
+          <div>
+            <p class="eyebrow">Nutrition support</p>
+            <h2>Need a diet plan that actually works?</h2>
+            <p>
+              Use our free diet calculator to get a complete meal plan with breakfast, lunch,
+              snack, and dinner ideas based on your body, goal, and budget.
+            </p>
+            <a class="btn btn-primary" href="diet-plan.html">View Diet Plan</a>
+          </div>
+          <div class="quote-box">
+            <p>“Abs are built in the kitchen, not just the gym.”</p>
+            <span>— Rajeev Fitness Team</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-alt">
         <div class="container split-section">
           <div>
             <p class="eyebrow">About the club</p>

@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Diet Plan | Rajeev fitness</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-bar">
+        <a class="brand" href="index.html">
+          <span class="brand-mark">B</span>
+          <span>Rajeev fitness</span>
+        </a>
+        <button class="theme-toggle" type="button" aria-label="Toggle color mode" aria-pressed="false">🌙 Dark</button>
+        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <nav class="site-nav">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="classes.html">Classes</a>
+          <a href="timetable.html">Timetable</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="pricing.html">Pricing</a>
+          <a href="diet-plan.html" class="active">Diet Plan</a>
+          <a href="bmi-calculator.html">BMI Calculator</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="container">
+          <p class="eyebrow">Personalized nutrition</p>
+          <h1>Apna diet plan banayein - body, goal aur budget ke hisaab se.</h1>
+          <p>Apna gender, age, weight, diet type aur budget choose karo - hum aapko complete meal plan denge jisme breakfast, lunch, snack aur dinner ke kai options honge jo ghar pe mil jayein aur khaye ja saken.</p>
+          <div class="hero-steps">
+            <div class="hero-step">
+              <span class="step-no">1</span>
+              <strong>Apni details bharo</strong>
+              <span>Gender, age, weight, goal aur diet type.</span>
+            </div>
+            <div class="hero-step">
+              <span class="step-no">2</span>
+              <strong>Budget choose karo</strong>
+              <span>Budget friendly, balanced ya premium.</span>
+            </div>
+            <div class="hero-step">
+              <span class="step-no">3</span>
+              <strong>Complete meal plan</strong>
+              <span>Har meal ke 6-7 options - jo aapko pasand ho wo khayein.</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container diet-grid">
+          <div class="diet-form-card">
+            <h3 style="margin-top: 0; color: var(--accent); font-size: 1.3rem;">🥗 Apni details bharo</h3>
+            <p style="color: var(--muted); font-size: 0.9rem; margin-bottom: 1rem;">Neeche form fill karo - bagal wale sidebar mein apna complete diet plan generate hoga.</p>
+            <form id="diet-form" class="diet-form">
+              <label>
+                <span>Gender</span>
+                <select id="gender" required>
+                  <option value="male">Male</option>
+                  <option value="female">Female</option>
+                </select>
+              </label>
+              <label>
+                <span>Age</span>
+                <input id="age" type="number" min="16" max="80" placeholder="e.g. 28" required />
+              </label>
+              <label>
+                <span>Weight (kg)</span>
+                <input id="weight" type="number" min="35" max="200" placeholder="e.g. 70" required />
+              </label>
+              <label>
+                <span>Goal</span>
+                <select id="goal">
+                  <option value="maintain">Maintain</option>
+                  <option value="lose">Lose weight</option>
+                  <option value="gain">Gain weight</option>
+                </select>
+              </label>
+              <label>
+                <span>Diet Type</span>
+                <select id="diet-type">
+                  <option value="general">General</option>
+                  <option value="vegetarian">Vegetarian</option>
+                  <option value="nonveg">Non-Vegetarian</option>
+                </select>
+              </label>
+              <label>
+                <span>Budget</span>
+                <select id="budget">
+                  <option value="balanced">Balanced</option>
+                  <option value="budget">Budget Friendly</option>
+                  <option value="premium">Premium</option>
+                </select>
+              </label>
+              <label>
+                <span>Activity Level</span>
+                <select id="activity">
+                  <option value="sedentary">Sedentary (kam movement)</option>
+                  <option value="light">Light (walk ya light workout)</option>
+                  <option value="moderate">Moderate (gym 3-4 din/week)</option>
+                  <option value="active">Active (gym 5-6 din/week)</option>
+                  <option value="veryactive">Very Active (daily intense workout)</option>
+                </select>
+              </label>
+              <button class="btn btn-primary" type="submit">Generate Diet Plan</button>
+            </form>
+
+            <div class="diet-guide">
+              <h3>What to eat (food guide)</h3>
+              <ul>
+                <li><strong>Protein:</strong> eggs, chicken, fish, paneer, dal, yogurt, tofu, sprouts, soybean, chana, rajma</li>
+                <li><strong>Carbs:</strong> oats, brown rice, chapati, sweet potato, fruits, daliya, ragi roti, poha, upma</li>
+                <li><strong>Healthy fats:</strong> almonds, walnuts, peanut butter, olive oil, ghee, avocado, flax seeds, chia seeds</li>
+                <li><strong>Vegetables:</strong> spinach, broccoli, carrots, cucumber, tomatoes, lauki, tori, bhindi, karela, palak, methi</li>
+                <li><strong>Dairy:</strong> milk, curd, paneer, chaas, lassi (unsweetened)</li>
+                <li><strong>Hydration:</strong> 3-4 litre paani daily, nimbu paani, coconut water, green tea</li>
+              </ul>
+              <p style="margin-top: 0.8rem; font-size: 0.88rem; color: var(--accent);"><strong>💡 Tip:</strong> Plan generate hone ke baad right side mein har food pe click karo - uski photo aur nutrition info popup mein dikhegi.</p>
+            </div>
+          </div>
+
+          <div>
+            <aside class="diet-result-panel" id="diet-result">
+              <h3>📋 Your Diet Plan is Here</h3>
+              <p class="result-subtitle">Apni details bhar ke Generate Plan button dabao - yahan sidebar mein complete diet plan show ho jayega.</p>
+              <div class="placeholder">
+                <div class="icon">🍽️</div>
+                <p><strong>Abhi plan generate nahi hua hai</strong></p>
+                <p style="font-size: 0.88rem;">Har food pe click karo - photo aur nutrition info popup mein dikhegi.</p>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <!-- Food image modal (popup) -->
+      <div class="food-modal" id="food-modal" role="dialog" aria-modal="true" aria-label="Food details">
+        <div class="food-modal-content">
+          <button class="close-btn" id="food-modal-close" aria-label="Close">✕</button>
+          <img class="food-image" id="food-modal-image" src="" alt="Food" />
+          <div class="food-info">
+            <h3 id="food-modal-name">Food Name</h3>
+            <div class="food-meta">
+              <span class="tag" id="food-modal-category">Category</span>
+              <span class="tag green" id="food-modal-type">Type</span>
+            </div>
+            <p id="food-modal-desc">Description</p>
+            <div class="nutrition-row" id="food-modal-nutrition"></div>
+          </div>
+        </div>
+      </div>
+
+      <section class="section section-alt">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Quick diet tips</p>
+            <h2>Diet follow karne ke golden rules</h2>
+          </div>
+          <div class="card-grid">
+            <article class="card">
+              <h3>Protein pehle</h3>
+              <p>Har meal mein protein rakho (eggs, paneer, chicken, dal). Yeh muscle banata hai aur pet bharata hai.</p>
+            </article>
+            <article class="card">
+              <h3>Paani piyo</h3>
+              <p>Roz 3-4 litre paani. Khali pet subah 1 glass garam paani nimbu ke saath piyo - metabolism badhega.</p>
+            </article>
+            <article class="card">
+              <h3>Meal timing</h3>
+              <p>Breakfast 8 baje, lunch 1 baje, snack 5 baje, dinner 8 baje - fix time pe khao. Late night mat khao.</p>
+            </article>
+            <article class="card">
+              <h3>Chewing slow</h3>
+              <p>Khane ko 20-30 baar chew karo. Pet ka signal brain ko 20 minute mein pahuchta hai - jaldi mat khao.</p>
+            </article>
+            <article class="card">
+              <h3>No sugar drinks</h3>
+              <p>Cold drink, packaged juice, energy drinks sab band. Nimbu paani, chaas, coconut water best hai.</p>
+            </article>
+            <article class="card">
+              <h3>Sleep matters</h3>
+              <p>7-8 ghante neend lo. Kam neend se weight gain aur muscle loss hota hai. Phone raat ko door rakho.</p>
+            </article>
+            <article class="card">
+              <h3>Oil control</h3>
+              <p>Kam tel aur ghee use karo. Ghee 1-2 spoon tak theek hai. Deep fried food bilkul avoid karo.</p>
+            </article>
+            <article class="card">
+              <h3>Consistency</h3>
+              <p>Ek din cheat meal chalega par poora din junk mat khao. 80% diet + 20% workout = 100% results.</p>
+            </article>
+            <article class="card">
+              <h3>Sabziyaan khao</h3>
+              <p>Roz 2-3 katori sabzi khao. Palak, lauki, tori, karela, gobhi, matar - seasonal sab best hai.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Indian food choices</p>
+            <h2>Ghar pe milne wale best Indian diet options</h2>
+            <p>Yeh sab cheezein aapki local kirana shop ya sabzi mandi mein easily mil jayengi. Budget friendly aur tested Indian khana jo real results deta hai.</p>
+          </div>
+          <div class="card-grid">
+            <article class="card">
+              <h3>Protein rich (veg)</h3>
+              <p>Paneer, tofu, dal (moong/chana/arhar), rajma, chana, soybean, sprouts, besan, dahi, milk, sattu, makhana</p>
+            </article>
+            <article class="card">
+              <h3>Protein rich (non-veg)</h3>
+              <p>Ande (eggs), chicken breast, murgi, machli (fish), mutton, keema, egg whites, chicken soup</p>
+            </article>
+            <article class="card">
+              <h3>Healthy carbs</h3>
+              <p>Brown rice, chapati, oats, daliya, ragi roti, jowar, bajra, sweet potato, poha, upma, idli, daliya khichdi</p>
+            </article>
+            <article class="card">
+              <h3>Healthy fats</h3>
+              <p>Badam (almonds), akhrot (walnuts), kaju, peanut butter, desi ghee (limited), olive oil, coconut oil, flax seeds, chia seeds</p>
+            </article>
+            <article class="card">
+              <h3>Seasonal sabziyaan</h3>
+              <p>Palak, methi, lauki, tori, karela, gobhi, matar, bhindi, kaddu, baingan, tamatar, kheera, gajar, shimla mirch</p>
+            </article>
+            <article class="card">
+              <h3>Seasonal fruits</h3>
+              <p>Banana, apple, santre, amla, papaya, guava, watermelon, mousambi, anar, kiwi, berries (premium), ananas</p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <h3>Rajeev fitness</h3>
+          <p>Premium wellness and fitness for every stage of your journey.</p>
+        </div>
+        <div>
+          <h4>Visit us</h4>
+          <p>Sigra, Hathua Market & Lanka, Varanasi</p>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <p>+91 9696899989</p>
+          <p>support@bobsgym.org</p>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <p>© <span id="year"></span> Rajeev fitness. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

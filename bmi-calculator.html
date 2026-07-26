@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BMI Calculator | Rajeev fitness</title>
+    <meta
+      name="description"
+      content="Calculate your Body Mass Index (BMI) accurately with metric or imperial units and see your healthy weight range."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-bar">
+        <a class="brand" href="index.html">
+          <span class="brand-mark">R</span>
+          <span>Rajeev fitness</span>
+        </a>
+        <button class="theme-toggle" type="button" aria-label="Toggle color mode" aria-pressed="false">🌙 Dark</button>
+        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <nav class="site-nav">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="classes.html">Classes</a>
+          <a href="timetable.html">Timetable</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="pricing.html">Pricing</a>
+          <a href="diet-plan.html">Diet Plan</a>
+          <a href="bmi-calculator.html" class="active">BMI Calculator</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="container">
+          <p class="eyebrow">Know your numbers</p>
+          <h1>Calculate your BMI accurately in seconds.</h1>
+          <p>Enter your height, weight, age and gender to get your Body Mass Index, health category and a healthy weight range for your height.</p>
+          <div class="hero-steps">
+            <div class="hero-step">
+              <span class="step-no">1</span>
+              <strong>Choose your units</strong>
+              <span>Metric (cm/kg) or Imperial (ft-in/lbs).</span>
+            </div>
+            <div class="hero-step">
+              <span class="step-no">2</span>
+              <strong>Enter your details</strong>
+              <span>Height, weight, age and gender.</span>
+            </div>
+            <div class="hero-step">
+              <span class="step-no">3</span>
+              <strong>Get instant results</strong>
+              <span>BMI score, category and healthy weight range.</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container diet-grid">
+          <div class="diet-form-card">
+            <h3 style="margin-top: 0; color: var(--accent); font-size: 1.3rem;">⚖️ Enter your details</h3>
+            <p style="color: var(--muted); font-size: 0.9rem; margin-bottom: 1rem;">Fill the form below — your BMI result will show on the right.</p>
+            <form id="bmi-form" class="diet-form">
+              <label>
+                <span>Units</span>
+                <select id="bmi-units">
+                  <option value="metric">Metric (cm, kg)</option>
+                  <option value="imperial">Imperial (ft/in, lbs)</option>
+                </select>
+              </label>
+              <label>
+                <span>Gender</span>
+                <select id="bmi-gender">
+                  <option value="male">Male</option>
+                  <option value="female">Female</option>
+                </select>
+              </label>
+              <label>
+                <span>Age</span>
+                <input id="bmi-age" type="number" min="2" max="120" placeholder="e.g. 28" required />
+              </label>
+
+              <div id="bmi-height-metric">
+                <label>
+                  <span>Height (cm)</span>
+                  <input id="bmi-height-cm" type="number" min="50" max="250" step="0.1" placeholder="e.g. 170" />
+                </label>
+              </div>
+
+              <div id="bmi-height-imperial" style="display:none;">
+                <label>
+                  <span>Height (feet)</span>
+                  <input id="bmi-height-ft" type="number" min="1" max="8" placeholder="e.g. 5" />
+                </label>
+                <label>
+                  <span>Height (inches)</span>
+                  <input id="bmi-height-in" type="number" min="0" max="11" placeholder="e.g. 7" />
+                </label>
+              </div>
+
+              <label id="bmi-weight-metric-label">
+                <span>Weight (kg)</span>
+                <input id="bmi-weight-kg" type="number" min="10" max="300" step="0.1" placeholder="e.g. 65" />
+              </label>
+
+              <label id="bmi-weight-imperial-label" style="display:none;">
+                <span>Weight (lbs)</span>
+                <input id="bmi-weight-lbs" type="number" min="20" max="660" step="0.1" placeholder="e.g. 143" />
+              </label>
+
+              <div class="booking-form-msg" id="bmi-form-msg"></div>
+              <button class="btn btn-primary" type="submit">Calculate BMI</button>
+            </form>
+
+            <div class="diet-guide">
+              <h3>BMI category ranges</h3>
+              <ul>
+                <li><strong>Below 18.5:</strong> Underweight</li>
+                <li><strong>18.5 – 24.9:</strong> Normal weight</li>
+                <li><strong>25 – 29.9:</strong> Overweight</li>
+                <li><strong>30 and above:</strong> Obese</li>
+              </ul>
+              <p style="margin-top: 0.8rem; font-size: 0.88rem; color: var(--accent);"><strong>💡 Note:</strong> BMI is a general screening tool and doesn't account for muscle mass. For a personalized fitness assessment, talk to our trainers.</p>
+            </div>
+          </div>
+
+          <div>
+            <aside class="diet-result-panel" id="bmi-result">
+              <h3>📊 Your BMI Result</h3>
+              <p class="result-subtitle">Fill in your details and click "Calculate BMI" to see your result here.</p>
+              <div class="placeholder">
+                <div class="icon">⚖️</div>
+                <p><strong>No result yet</strong></p>
+                <p style="font-size: 0.88rem;">Your BMI score, category and healthy weight range will appear here.</p>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <h3>Rajeev fitness</h3>
+          <p>Premium wellness and fitness for every stage of your journey.</p>
+        </div>
+        <div>
+          <h4>Visit us</h4>
+          <p>Sigra, Hathua Market & Lanka, Varanasi</p>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <p>+91 9696899989</p>
+          <p>support@bobsgym.org</p>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <p>© <span id="year"></span> Rajeev fitness. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
