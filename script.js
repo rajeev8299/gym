@@ -10,6 +10,7 @@ if (navBar && !navBar.querySelector('.theme-toggle')) {
   themeToggle.className = 'theme-toggle';
   themeToggle.type = 'button';
   themeToggle.setAttribute('aria-label', 'Toggle color mode');
+  themeToggle.innerHTML = '<span class="theme-icon">🌙</span><span class="theme-label">Dark</span>';
   navBar.insertBefore(themeToggle, navBar.querySelector('.site-nav') || navBar.lastElementChild);
 }
 
@@ -21,7 +22,15 @@ function applyTheme(theme) {
   localStorage.setItem('theme', theme);
 
   if (themeToggleButton) {
-    themeToggleButton.innerHTML = theme === 'dark' ? '☀️ Light' : '🌙 Dark';
+    let icon = themeToggleButton.querySelector('.theme-icon');
+    let label = themeToggleButton.querySelector('.theme-label');
+    if (!icon || !label) {
+      themeToggleButton.innerHTML = '<span class="theme-icon"></span><span class="theme-label"></span>';
+      icon = themeToggleButton.querySelector('.theme-icon');
+      label = themeToggleButton.querySelector('.theme-label');
+    }
+    icon.textContent = theme === 'dark' ? '☀️' : '🌙';
+    label.textContent = theme === 'dark' ? 'Light' : 'Dark';
     themeToggleButton.setAttribute('aria-pressed', String(theme === 'dark'));
   }
 }
