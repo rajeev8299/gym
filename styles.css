@@ -2057,23 +2057,23 @@ body[data-theme="dark"] .diet-result-panel .plan-hero-badge {
     left: 1rem;
     right: 1rem;
     flex-direction: column;
-    gap: 0.15rem;
+    gap: 0.05rem;
     background: var(--bg);
-    padding: 0.6rem;
+    padding: 0.4rem;
     border: 1px solid var(--border);
-    border-radius: 16px;
+    border-radius: 14px;
     z-index: 100;
     box-shadow: var(--shadow);
-    max-height: min(60vh, 420px);
+    max-height: min(48vh, 320px);
     overflow-y: auto;
   }
 
   .site-nav a {
     color: var(--text);
-    padding: 0.55rem 0.7rem;
-    border-radius: 10px;
-    line-height: 1.2;
-    font-size: 0.92rem;
+    padding: 0.42rem 0.65rem;
+    border-radius: 8px;
+    line-height: 1.15;
+    font-size: 0.85rem;
     transition: background 0.2s ease;
   }
 
