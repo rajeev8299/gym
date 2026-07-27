@@ -1325,6 +1325,7 @@ body[data-theme="dark"] .diet-result-panel .plan-hero-badge {
     grid-template-columns: 1fr;
   }
 
+  .diet-form-card,
   .diet-result-panel {
     position: static;
     max-height: none;
@@ -2051,7 +2052,7 @@ body[data-theme="dark"] .diet-result-panel .plan-hero-badge {
   }
 
   .site-nav {
-    display: none;
+    display: flex;
     position: absolute;
     top: 78px;
     left: 1rem;
@@ -2066,6 +2067,11 @@ body[data-theme="dark"] .diet-result-panel .plan-hero-badge {
     box-shadow: var(--shadow);
     max-height: min(48vh, 320px);
     overflow-y: auto;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transform: translateY(-10px);
+    transition: opacity 0.22s ease, transform 0.22s ease, visibility 0.22s;
   }
 
   .site-nav a {
@@ -2084,7 +2090,10 @@ body[data-theme="dark"] .diet-result-panel .plan-hero-badge {
   }
 
   .site-nav.open {
-    display: flex;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: translateY(0);
   }
 }
 
@@ -2259,6 +2268,10 @@ body[data-theme="dark"] .diet-result-panel .plan-hero-badge {
   }
 
   .diet-result-panel .macros {
+    grid-template-columns: 1fr;
+  }
+
+  .schedule-grid {
     grid-template-columns: 1fr;
   }
 

@@ -47,9 +47,38 @@ if (themeToggleButton) {
 }
 
 if (toggleButton && nav) {
-  toggleButton.addEventListener('click', () => {
+  const closeNav = () => {
+    nav.classList.remove('open');
+    toggleButton.setAttribute('aria-expanded', 'false');
+  };
+
+  toggleButton.addEventListener('click', (e) => {
+    e.stopPropagation();
     const isOpen = nav.classList.toggle('open');
     toggleButton.setAttribute('aria-expanded', String(isOpen));
+  });
+
+  document.addEventListener('click', (e) => {
+    if (!nav.classList.contains('open')) return;
+    if (nav.contains(e.target) || toggleButton.contains(e.target)) return;
+    closeNav();
+  });
+
+  nav.querySelectorAll('a').forEach((link) => {
+    link.addEventListener('click', closeNav);
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && nav.classList.contains('open')) {
+      closeNav();
+      toggleButton.focus();
+    }
+  });
+
+  window.addEventListener('resize', () => {
+    if (window.innerWidth > 900 && nav.classList.contains('open')) {
+      closeNav();
+    }
   });
 }
 
